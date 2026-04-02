@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>порядок полей в форме</title>
+    <style>
+        fieldset{
+            width: 200; /*ширина*/
+            padding: 0 10px; /*поля*/
+        }
+        fieldset:nth-child(odd){
+            float: left; /*обтекание для всех нечетный элементов*/
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <p>имя:</p>
+            <p><input name="name" tabindex="1"></p>
+        </fieldset>
+         <fieldset>
+            <p>фамилия:</p>
+            <p><input name="lastname" tabindex="3"></p>
+        </fieldset>
+         <fieldset>
+            <p>Телефон:</p>
+            <p><input name="tel" tabindex="2"></p>
+        </fieldset>
+         <fieldset>
+            <p>пол:</p>
+            <p><select name="gender" tabindex="4">
+                <option selected>Мужской</option>
+                <option>Женский</option>
+            </select></p>
+        </fieldset>
+    </form>
+</body>
+</html>

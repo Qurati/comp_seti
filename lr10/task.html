@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>формы</title>
+</head>
+<body>
+    <form>
+        форма регестрации <br><br>
+    Имя:
+    <input type="text" name="name" ><br><br>
+    E-mail:
+    <input type="email" name="email" ><br><br>
+    Пароль:
+    <input type="password" name="password" ><br><br>
+    Повтор пароля:
+    <input type="password" name="confirm_password" ><br><br>
+
+    Пол
+            <input type="radio" name="gender" value="male" checked> мужской
+            <input type="radio" name="gender" value="female" > женский
+    <br>
+
+    <select name="uvlechenia" size="7" multiple>
+        <option value="comp" selected>компьютеры
+        <option value="sport">спорт
+        <option value="games">игры
+        <option value="pet">животные
+        <option value="auto">автомобили
+        <option value="dance">клубы
+        <option value="music">музыка
+    </select>
+    <br>
+
+  Ваши пожелания
+    <textarea name="wishes"></textarea><br><br>
+
+    <button type="submit">Отправить</button>
+    <button type="reset">Очистить</button>
+</form>
+
+</body>
+</html>
